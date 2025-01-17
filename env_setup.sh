@@ -15,7 +15,7 @@ function echo_success() { echo -e "$(colored_green "${1}")"; }
 function fail_to_cd()
 {
 	echo_error "Installation failed!!"
-        echo_error "No such file or directory ${1} exiting"
+    echo_error "No such file or directory ${1} exiting"
 	exit
 }
 
