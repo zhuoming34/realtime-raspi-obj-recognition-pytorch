@@ -5,6 +5,7 @@ from numpy import ndarray
 from cam_utils import get_video, center_square_img
 from pytorch_utils import network_init
 from imagenet_utils import load_imagenet_labels, show_top_estimations
+from constants import WIDTH_IMG
 
 
 if __name__ == '__main__':

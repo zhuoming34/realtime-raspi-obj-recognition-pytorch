@@ -27,14 +27,13 @@ def center_square_img(
     """
     Crop the image to be squared
     """
-    assert frame
     assert width_old >= width_new > 0
     assert height_old >= height_new > 0
 
-    h_start = int((height_old - height)/2)
-    h_end = int((height_old + height)/2)
-    w_start = int((width_old - width)/2)
-    w_end = int((width_old + width)/2)
+    h_start = int((height_old - height_new)/2)
+    h_end = int((height_old + height_new)/2)
+    w_start = int((width_old - width_new)/2)
+    w_end = int((width_old + width_new)/2)
 
     img: ndarray = frame[h_start:h_end, w_start:w_end] 
 
